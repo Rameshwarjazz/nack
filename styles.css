@@ -144,7 +144,7 @@ body.scrolled header {
     /* background-size: cover; */
   }
   *:target ~ .item-11{
-    opacity: 0;
+    opacity: 1;
   }
   #item-11:target ~ .item-11 {
     opacity: 1;
@@ -368,4 +368,7 @@ footer {
     font-size: 14px;
     color: #ccc;
 }
-
+main{
+    margin: 0px;
+    padding: 0px;
+}
