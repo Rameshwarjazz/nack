@@ -28,7 +28,7 @@ body {
 }
 
 .horizontal-list {
-    padding-left: 0px;
+    /* padding-left: 0px; */
     margin: 0px;
 }
 
@@ -46,7 +46,7 @@ body {
     color: lightgrey;
     border-bottom: 1px solid black;
 }
-h1{
+header h1{
     text-align: center;
     color: white;
 }
@@ -60,6 +60,12 @@ h1{
 .detail button{
     background-color: black;
     color: white;
+}
+.section1{
+    text-align: center;
+}
+section1-cart{
+    display: inline-block;
 }
 
 
