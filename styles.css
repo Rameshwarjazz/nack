@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    padding: 0;
+    padding: 0px;
     font-family: 'ApercuPro-Regular', sans-serif;
 
 }
@@ -69,7 +69,7 @@ body.scrolled header {
     margin: 0px auto ;
 
   }
-  
+
   .carousel-item {
     position: absolute;
     top: 0;
@@ -80,6 +80,7 @@ body.scrolled header {
     opacity: 0;
     transition: all 0.5s ease-in-out;
   }
+ 
   .arrow{
     border: solid black;
     border-width: 0 3px 3px 0;
@@ -116,6 +117,42 @@ body.scrolled header {
   .item-3 {
     background: url('https://nack.life/cdn/shop/files/Carousel_Web_Banner_img-01_1280x.jpg?v=1684483241');
     background-size: cover;
+  }
+  .item-11 {
+    z-index: 2;
+    opacity: 1;
+    background: url('https://nack.life/cdn/shop/files/choose_your_fav_410x.jpg?v=1682330570');
+    /* background-size: cover; */
+  }
+  .item-12 {
+    background: url('https://nack.life/cdn/shop/files/vegan-plant-protein-powder-nack-india-min_750x_1000x_9fe870d1-dcb5-439f-a696-2219a36f7fca_410x.webp?v=1656932664');
+    /* background-size: cover; */
+  }
+  .item-13 {
+
+    background: url('https://nack.life/cdn/shop/files/nack-astaxanthin-antioxidant-immunity-boost-1-min_410x.jpg?v=1656933817');
+    /* background-size: cover; */
+  }
+  .item-14 {
+
+    background: url('https://nack.life/cdn/shop/files/tsk_home_page_1_410x.jpg?v=1680075128');
+    /* background-size: cover; */
+  }
+  .item-15 {
+
+    background: url('https://nack.life/cdn/shop/files/choose_your_fav_9c6ba076-3ac3-4bb3-ab24-e03329ecbf64_410x.jpg?v=1692271535');
+    /* background-size: cover; */
+  }
+  *:target ~ .item-11{
+    opacity: 0;
+  }
+  #item-11:target ~ .item-11 {
+    opacity: 1;
+  
+  }
+  #item-12:target ~ .item-12, #item-13:target ~ .item-13 , #item-14:target ~ .item-14 , #item-15:target ~ .item-15 {
+    z-index: 3;
+    opacity: 1;
   }
   
   *:target ~ .item-1{
@@ -193,11 +230,17 @@ section {
    margin-top: 5%;
 }
 .article1-left button{
-    background-color: goldenrod;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 .article1-img-right{
     padding-left: 35rem;
-    margin-top: -20rem;
+    margin-top: -15rem;
 }
 .article1-img-right img{
    height: 80vh;
@@ -208,13 +251,121 @@ section {
     margin-top: 5%;
  }
  .article2-left button{
-    background-color: goldenrod;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
 }
  .article2-img-right{
      padding-right: 35rem;
-     margin-top: -20rem;
+     margin-top: -15rem;
  }
  .article2-img-right img{
     height: 80vh;
  }
+
+
+
+
+/* Footer styling */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: left;
+}
+
+.footer-section h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons li {
+    display: inline;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.subscribe-form input[type="email"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.subscribe-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.subscribe-form button:hover {
+    background-color: #0056b3;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
 
